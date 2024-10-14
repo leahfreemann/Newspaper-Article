@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Tennessee Times</h1>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+<main class="article-content">
+    <section>
+        <h2>Nashville Hosts Annual Music Festival</h2>
+        <p><strong>By Sarah Thompson | September 23, 2024</strong></p>
+        <p>Nashville, TN - The annual music festival took place over the weekend, attracting thousands of fans from across the country. The event featured performances by renowned artists and showcased the city's deep musical heritage. <br> Organizers said the turnout exceeded expectations, with over 50,000 attendees enjoying live shows, food trucks, and local craft vendors.</p>
+
+        
+        <h2>Tennessee Vols Win Season Opener</h2>
+        <p><strong>By Michael Anderson | September 23, 2024</strong></p>
+        <p>Knoxville, TN - The Tennessee Vols football team kicked off their season with a thrilling victory over their rivals in the season opener. The game, held at Neyland Stadium, saw the volunteers dominate in both offense and defense, securing a final score of 35-21. <br> Fans celebrated the win with great enthusiasm, hoping for a strong season ahead.</p>
+    </section>
+  <!--Remove this line if you want the sidebar on the side-->
+    <!--Add sections if needed-->
+<aside class="sidebar">
+    <section class="advertisement">
+        <h3>Drive the Future!</h3>
+        <img src="randomcar.jpeg" alt="Car Advertisement">
+        <p>Discover the latest models from XYZ Motors. Experience luxury, power, and advanced technology. Test drive today!</p>
+    </section>
+</aside>
+</main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

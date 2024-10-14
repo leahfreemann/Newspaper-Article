@@ -1,0 +1,219 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr 300px; /*Single colum layout */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.article-content section {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+} 
+
+/* Advertisement section styles */
+.advertisement {
+    background-color: #fff; /* White background for the advertisement */
+    padding: 20px; /* Space inside the advertisement */
+    border: 2px solid #007bff; /* Blue border for emphasis */
+    border-radius: 8px; /* Rounded corners for the advertisement */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 20px; /* Space below the advertisement */
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.advertisement img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    border: 2px solid #007bff;
+}
+
+/* Heading styles */
+.advertisement h3 {
+    color: #007bff; /* Blue color for the heading */
+    font-size: 1.5em; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Paragraph styles */
+.advertisement p {
+    color: #333; /* Dark gray for the text */
+    line-height: 1.5; /* Better line spacing */
+}
+
+/* Add hover effect for interactivity */
+.advertisement:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    transition: transform 0.2s; /* Smooth transition */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .advertisement {
+        padding: 15px; /* Reduce padding on small screens */
+        max-width: 100%;
+    }
+
+    .advertisement h3 {
+        font-size: 1.2em; /* Smaller heading on small screens */
+    }
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 2em;
+}
+
+/*Hide regular navigation items on smaller screen */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /*Hide navigation bar items initially */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+body {
+    background-color: rgb(213, 147, 25);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+
+}
+
+.latest-news h2 {
+    font-size: 30px;
+}
+
+h1 {
+    border: 3px dashed orange;
+    text-decoration: underline;
+    font-family: cursive;
+    font-size: 20px;
+    display:inline; /*Wrap border tightly aroudn text */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: center;
+}
